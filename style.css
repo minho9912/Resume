@@ -1,8 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800&display=swap");
 
 * {
   font-family: "Montserrat";
 }
+
 body,
 h1,
 h2 {
@@ -10,47 +11,8 @@ h2 {
   padding: 0px;
 }
 
-footer {
-  text-align: center;
-  background-color: #1e1e1e;
-  padding: 20px;
-  font-size: 12px;
-  color: #919191;
-}
-
-.mainbox {
-  width: 610px;
-  padding: 30px;
-  margin: 30px;
-  border: 1px solid #ebebeb;
-  margin: 0 auto;
-  /* margin-left: auto;
-  margin-right: auto; */
-  box-shadow: 0 1px 20px 0 rgba(0, 0, 0, 0.1);
-}
-
-.name-text {
-  font-size: 16px;
-  font-weight: bold;
-  font-style: italic;
-}
-
-.about-me-text {
-  font-size: 10px;
-  line-height: 16px;
-}
-
-.title-text {
-  font-size: 11px;
-  font-weight: bold;
-  color: #282828;
-  float: left;
-}
-.year-text {
-  font-size: 11px;
-  font-weight: bold;
-  color: #282828;
-  float: right;
+body {
+  min-width: fit-content;
 }
 
 h1 {
@@ -63,32 +25,207 @@ h2 {
   font-size: 20px;
   color: #282828;
   font-weight: lighter;
-  margin-bottom: 16px;
+  margin-bottom: 10px;
   border-bottom: 1px solid #ebebeb;
-  padding-bottom: 5px;
+  padding-bottom: 6px;
 }
+
+.name-text {
+  font-size: 16px;
+  color: #7c7c7c;
+  font-weight: bold;
+}
+
+.about-me-text {
+  font-size: 10px;
+  line-height: 17px;
+}
+
+.mainbox {
+  width: 610px;
+  padding: 30px;
+  margin: 30px;
+  margin-right: auto;  
+  margin-left: auto;   
+  border: 1px solid #ebebeb;
+  box-shadow: 0px 1px 20px 0px rgba(0, 0, 0, 0.1);
+}
+
+
+
+section {
+  margin-bottom: 24px;
+}
+
 .float-wrap {
   overflow: hidden;
 }
+
+.title-text {
+  font-size: 11px;
+  font-weight: bold;
+  color: #282828;
+  float: left;
+}
+
+.year-text {
+  font-size: 11px;
+  font-weight: bold;
+  color: #282828;
+  float: right;
+}
+
 .desc-text {
   font-size: 9px;
 }
+
 .desc-subtext {
   font-size: 9px;
   color: #282828;
   padding-left: 16px;
 }
-.title-box {
-  text-align: right;
+.desc-subsub {
+  font-size: 9px;
+  color: #282828;
+  padding-left: 32px;
 }
-.profile-img {
-  float: left;
-  display: inline;
-}
+
 .sns-img {
   width: 12px;
   height: 12px;
 }
+
 .sns-wrap {
   text-align: right;
+}
+
+.profile-img {
+  float: left;
+}
+
+footer {
+  text-align: center;
+  background-color: #1e1e1e;
+  padding: 20px;
+  font-size: 12px;
+  color: #919191;
+}
+
+a{
+  all: unset;
+  text-decoration: none;
+  color:#1e1e1e
+}
+a:hover {
+  color: blue;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+table ,td{
+  font-size: 12px;
+  border: 1px solid #d8d4d4;
+  border-collapse: collapse;
+  text-align: center;
+  height: 40px;
+}
+
+
+.title-text-right {
+  font-size: 11px;
+  font-weight: bold;
+  color: #282828;
+  text-align: center;
+}
+
+
+.float-text{
+  border: 1px solid #919191;
+}
+.float-text > .float-wrap{
+  border-bottom: 1px solid #919191;
+}
+.float-text > .float-wrap > .title-text{
+  width: 100%;
+  text-align: center;
+}
+
+
+
+body section:nth-child(4){
+  clear: both;
+}
+
+.title-align {
+  display: flex;
+  justify-content: space-around;
+}
+
+.float-text-text {
+  margin-top: 22px;
+}
+
+.title-img{
+  width: 100px;
+  height: 100px;
+}
+
+.title-main{
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+
+.pie-chart {
+  position: relative;
+  display:inline-block;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  transition: 0.3s;
+  background: conic-gradient( #21f3d6 70% 60%, #ccc 50% 100%);
+}
+.pie-chart1 {
+  position: relative;
+  display:inline-block;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  transition: 0.3s;
+  background: conic-gradient( #21f3d6 20% 30%, #ccc 30% 60%);
+}
+.pie-chart2 {
+  position: relative;
+  display:inline-block;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  transition: 0.3s;
+  background: conic-gradient( #21f3d6 70% 60%, #ccc 50% 100%);
+}
+span.center{
+  background: #fff;
+  display : block;
+  position: absolute;
+  top:50%; left:50%;
+  width:100px; height:1s00px;
+  border-radius: 50%;
+  text-align:center; line-height: 100px;
+  font-size:20px;
+   transform: translate(-50%, -50%);
+}
+.ppa{
+  width: 200px;
+  height: 250px;
+  margin: 0px 30px;
+}
+
+.phtml {
+  text-align: center;
+  display: block;
+}
+
+.flexpp{
+  display: flex;
+  justify-content: center;
 }

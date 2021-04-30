@@ -1,3 +1,5 @@
+}, 4000);
+
 //무명 함수
 let foo = setInterval(() => {
   console.log("출력합니다.");
@@ -7,8 +9,7 @@ let foo = setInterval(() => {
 //4초 때에 사라지는것이기에 3번까지만 출력됨
 setTimeout(function () {
   clearInterval(foo);
-}, 4000);
-
+},3000)
 //익명함수와 선언적함수
 // bar는 20이 출력됨
 let bar;
@@ -82,3 +83,34 @@ let object2 = {
     console.log(this.string + " " + this.number);
   },
 };
+
+//객체 배열
+let products = [
+  { name: "바나나", price: 1200 },
+  { name: "사과", price: 1300 },
+  { name: "키위", price: 1400 },
+];
+
+//함수를 외부로 보낸 형태
+let products2 = [
+  { name: "바나나", price: 1200 },
+  { name: "사과", price: 1300 },
+  { name: "키위", price: 1400 },
+];
+
+function printProduct(products2) {
+  console.log(products2.name + "의 가격은: " + products2.price);
+}
+
+for (let proc of products2) {
+  printProduct(proc);
+}
+
+//생성자 함수
+function Product(name, price) {
+  this.name = name;
+  this.price = price;
+}
+
+let pro2 = new Product("바나나",1200);
+console.log(pro2)
